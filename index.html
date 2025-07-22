@@ -1,128 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sw">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ibrahim Garden Tours | Kilimanjaro & Safari</title>
+  <title>Apostle Paul English Medium School</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Swiper.js CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  <!-- Swiper.js JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
 <body class="bg-white text-gray-800">
 
-<!-- Hero Section -->
-<section class="bg-cover bg-center" style="background-image: url('https://i.ibb.co/ymrMdS6M/Serengeti-National-Park-027-2x.jpg'); width: 360px; height: 200px;">
-  <div class="bg-black bg-opacity-50 w-full h-full flex flex-col justify-center items-center text-center px-4">
-    <h1 class="text-xl md:text-2xl font-bold text-white mb-2">Discover Unforgettable Adventures</h1>
-    <p class="text-sm md:text-lg text-white mb-4">Explore Tanzania's Stunning Landscapes</p>
-    <a href="mailto:Safariskilimanjaro02@gmail.com" class="bg-green-600 text-white px-4 py-2 rounded-full text-sm hover:bg-green-700 transition">Book Your Safari Now</a>
+  <!-- Header -->
+  <header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+      <h1 class="text-xl md:text-2xl font-extrabold tracking-tight">Apostle Paul English Medium School</h1>
+      <!-- Menus removed as requested -->
+    </div>
+  </header>
+
+  <!-- Hero Slider Section (Smart & Stylish) -->
+  <section class="relative h-[250px]">
+    <div class="swiper shortSwiper h-full">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide relative">
+          <img src="https://i.ibb.co/8nyjgjdS/IMG-20250704-WA0021.jpg" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <div class="text-white text-center px-4">
+              <h2 class="text-2xl font-bold mb-2">Karibu Shule Yetu</h2>
+              <p class="text-sm">Elimu bora yenye misingi ya maadili na ubunifu.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide relative">
+          <img src="https://i.ibb.co/LdTK0w1g/IMG-20250704-WA0031.jpg" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <div class="text-white text-center px-4">
+              <h2 class="text-2xl font-bold mb-2">Mazingira Salama ya Kujifunza</h2>
+              <p class="text-sm">Tunajali afya, usalama na maendeleo ya kila mwanafunzi.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide relative">
+          <img src="https://i.ibb.co/XZgkQsNH/IMG-20250704-WA0030.jpg" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <div class="text-white text-center px-4">
+              <h2 class="text-2xl font-bold mb-2">Walimu Mahiri</h2>
+              <p class="text-sm">Tunao waalimu wenye taaluma na uzoefu mkubwa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kuhusu Section -->
+  <section id="kuhusu" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl font-bold text-blue-900 mb-4">Apostle English Medium School</h2>
+        <p class="text-lg text-gray-700 mb-4">
+          Karibu Apostle Paul English Medium School Shule Bora ya Masomo ya Nursery na Primary kwa Gharama Nafuu sana 
+        </p>
+        <a href="https://wa.me/255712345678" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full shadow">Apply Now via WhatsApp</a>
+      </div>
+      <div>
+        <img src="https://i.ibb.co/jZL84vxN/IMG-20250704-WA0022.jpg" alt="Shule" class="rounded-xl shadow-lg" />
+      </div>
+    </div>
+  </section>
+<!-- Sehemu ya Habari Mpya -->
+<section id="habari" class="bg-gray-100 py-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Apostle English Medium School</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Habari 1 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-xl transition">
+        <img src="https://i.ibb.co/6JBW8KG8/IMG-20250704-WA0029.jpg" alt="Tukio la shule" class="rounded-t-lg w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">Mahafali ya Wanafunzi wa Nursery</h3>
+          <p class="text-gray-700 text-sm">Sherehe ya mahafali ilifanyika kwa mafanikio makubwa huku wazazi na walimu wakishiriki kikamilifu.</p>
+        </div>
+      </div>
+      <!-- Habari 2 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-xl transition">
+        <img src="https://i.ibb.co/JWby7R5H/IMG-20250704-WA0026-1.jpg" alt="Ziara ya wanafunzi" class="rounded-t-lg w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">Mafunzo kwa Vitendo</h3>
+          <p class="text-gray-700 text-sm">Wanafunzi wakionesha Masomo mbalimbali mbele ya Wazazi siku ya mahafali.</p>
+        </div>
+      </div>
+      <!-- Habari 3 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-xl transition">
+        <img src="https://i.ibb.co/XBMBrkC/IMG-20250722-WA0039-1.jpg" alt="Siku ya michezo" class="rounded-t-lg w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">Cheti cha Shule Bora</h3>
+          <p class="text-gray-700 text-sm">Tumefanikiwa kuwa Shule bora kwenye matokeo ya Pamoja kitaifa na kutunukiwa Cheti.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- Image Slider BELOW Hero Section -->
-<section class="flex justify-center bg-gray-100 py-8">
-  <div class="swiper mySwiper w-[300px] h-[200px]">
+<!-- Smart Slider Section -->
+<section class="my-20 max-w-5xl mx-auto px-4">
+  <h2 class="text-3xl font-bold text-center text-blue-900 mb-6">Apostle Paul School</h2>
+  <div class="swiper extraSwiper h-[220px] rounded-xl overflow-hidden shadow-lg">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="https://i.ibb.co/5hK7BymY/banner-kilimanjaro-6-1.png" class="w-full h-full object-cover" alt="Slide 1" />
+        <img src="https://i.ibb.co/Q7hgSHbF/IMG-20250704-WA0023.jpg" class="w-full h-full object-cover" />
       </div>
       <div class="swiper-slide">
-        <img src="https://i.ibb.co/N2qnqk1T/safari-1.png" class="w-full h-full object-cover" alt="Slide 2" />
+        <img src="https://i.ibb.co/3YkFNk12/IMG-20250704-WA0025.jpg" class="w-full h-full object-cover" />
       </div>
       <div class="swiper-slide">
-        <img src="https://i.ibb.co/9kpBXm8F/banner-kilimanjaro-7.png" class="w-full h-full object-cover" alt="Slide 3" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://i.ibb.co/rhsdJb0/20250707-132721.png" class="w-full h-full object-cover" alt="Slide 4" />
+        <img src="https://i.ibb.co/Ld23d0Fx/IMG-20250704-WA0024.jpg" class="w-full h-full object-cover" />
       </div>
     </div>
   </div>
 </section>
 
-<!-- Swiper JS Init -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-  });
-</script>
 
-<!-- About Us -->
-<section class="py-12 px-4 md:px-24 text-center">
-  <h2 class="text-3xl font-bold mb-4">About Us</h2>
-  <p class="text-gray-600 max-w-2xl mx-auto">Welcome to Ibrahim Garden Hostel, your choice for budget accommodation while in Arusha city center; We are a passionate team of professional tour operators dedicated to showcasing the natural beauty, culture, and hidden treasures of Tanzania and East Africa. With years of experience in Accommodation Services, and organizing personalized safaris, Mount Kilimanjaro climbs, cultural tours, and beach holidays, we pride ourselves on offering authentic experiences that create lifelong memories. Our mission is to ensure every guest feels safe, inspired, and deeply connected to the destinations we explore together. At Ibrahim Garden Hostel, we believe travel is not just about visiting new places, but about meaningful connections with people, wildlife, and landscapes. Join us today and discover Africa’s breathtaking beauty with a team that truly cares about your dreams</p>
-</section>
 
-<!-- Packages -->
-<section id="packages" class="py-12 px-4 md:px-24 bg-gray-100">
-  <h2 class="text-3xl font-bold text-center mb-10">Our Safari & Trekking Packages</h2>
-  
-  <div class="grid md:grid-cols-3 gap-8">
-    <!-- Machame Route -->
-    <div class="bg-white shadow rounded-lg overflow-hidden">
-      <img src="https://i.ibb.co/9kcH4rnQ/images-45.jpg" alt="Kilimanjaro Route" class="w-full h-56 object-cover">
-      <div class="p-4">
-        <h3 class="text-xl font-bold mb-2">Kilimanjaro Route</h3>
-        <p class="text-gray-600 mb-4">At Ibrahim Garden Hostel  Safari, we extend a warm invitation to embark on a journey of a lifetime with us. We're not just a travel company; we're dream weavers, dedicated to turning your wildest adventures into unforgettable realities. Imagine traversing the sprawling savannahs of Tanzania, encountering majestic wildlife, or standing triumphantly at the summit of Mount Kilimanjaro. With our seasoned team of experts by your side, every step of your journey is guided by experience and passion. </p>
-        <a href="mailto:Safariskilimanjaro02@gmail.com" class="bg-green-600 text-white px-4 py-2 rounded">Book Now</a>
+<!-- Ada Section -->
+<section id="ada" class="bg-white py-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Ada na Umri wa Wanafunzi</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <!-- Ada ya Nursery -->
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2">Nursery</h3>
+        <p class="text-gray-700 mb-2">Umri: Miaka 2.5 - 5</p>
+        <p class="text-gray-700 mb-4">Ada: <span class="font-semibold text-green-600">TSh 860,000 kwa Mwaka</span></p>
+        <a href="https://wa.me/255673769392" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow">Jisajili Sasa</a>
       </div>
-    </div>
-
-    <!-- Machame Route -->
-    <div class="bg-white shadow rounded-lg overflow-hidden">
-      <img src="https://i.ibb.co/PZwD1gXz/banner-kilimanjaro-2-1.png" alt="Lemosho Route" class="w-full h-56 object-cover">
-      <div class="p-4">
-        <h3 class="text-xl font-bold mb-2">Machame Route</h3>
-        <p class="text-gray-600 mb-4">7 Days | 6 Nights
-       Tour Overview
-Embark on an exhilarating 6-day journey to the summit of Mount Kilimanjaro via the Machame Route, commonly known as the "Whiskey Route." Renowned for its stunning scenery and diverse landscapes, this route presents a challenging yet highly rewarding adventure for trekkers. Beginning in the lush rainforest at the base, the Machame Route traverses multiple climatic zones, offering breathtaking views and unique ecosystems along the way. With gradual acclimatization and expert guidance, this climb enhances your chances of reaching Uhuru Peak, the highest point in Africa.</p>
-        <a href="mailto:Safariskilimanjaro02@gmail.com" class="bg-green-600 text-white px-4 py-2 rounded">Book Now</a>
+      
+      <!-- Ada ya Primary -->
+      <div class="bg-green-50 border-l-4 border-green-600 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-bold text-green-800 mb-2">Primary</h3>
+        <p class="text-gray-700 mb-2">Umri: Miaka 6 - 13</p>
+        <p class="text-gray-700 mb-4">Ada: <span class="font-semibold text-blue-600">TSh 1200,000 kwa Mwaka</span></p>
+        <a href="https://wa.me/255673769392" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow">Jisajili Sasa</a>
       </div>
-    </div>
 
-    <!-- Marangu Route -->
-    <div class="bg-white shadow rounded-lg overflow-hidden">
-      <img src="https://i.ibb.co/rhsdJb0/20250707-132721.png" alt="Marangu Route" class="w-full h-56 object-cover">
-      <div class="p-4">
-        <h3 class="text-xl font-bold mb-2">Marangu Route</h3>
-        <p class="text-gray-600 mb-4">Tour Overview
-Embark on a 6-day journey to the summit of Mount Kilimanjaro via the Marangu Route, the only route with hut accommodations, providing a more comfortable trekking experience. Known as the "Coca-Cola Route," Marangu offers diverse landscapes, from lush rainforests to alpine deserts. This extended itinerary includes an extra acclimatization day, improving your chances of reaching Uhuru Peak, Africa's highest point. With expert guides and a well-structured plan, this adventure is perfect for trekkers seeking a balanced and scenic climb.</p>
-        <a href="mailto:Safariskilimanjaro02@gmail.com" class="bg-green-600 text-white px-4 py-2 rounded">Book Now</a>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- Call to Action -->
-<section class="py-12 bg-green-600 text-white text-center">
-  <h2 class="text-3xl font-bold mb-4">Ready to Start Your Adventure?</h2>
-  <a href="mailto:Safariskilimanjaro02@gmail.com" class="bg-white text-green-600 px-6 py-3 rounded-full text-lg">Book Now</a>
-</section>
+
+
 
 <!-- Footer -->
-<footer class="bg-gray-800 text-gray-300 py-8">
-  <div class="container mx-auto text-center">
-    <img src="https://i.ibb.co/yB4GB1kt/IMG-20250707-WA0007-1.jpg" alt="Ibrahim Garden Hostel" class="mx-auto mb-4 w-24">
-    <p>Contact us: +255 655 474 440 | Safariskilimanjaro02@gmail.com</p>
-    <div class="flex justify-center space-x-4 mt-4">
-      <a href="#"><img src="https://i.ibb.co/F4Vh5CQV/download-64.png" class="w-6"></a>
-      <a href="#"><img src="https://i.ibb.co/WWRcqFsB/download-66.png" class="w-6"></a>
-      <a href="#"><img src="https://i.ibb.co/6Jv6Dwnq/download-67.png" class="w-6"></a>
+<footer class="bg-blue-900 text-white py-10 mt-10">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+    <div>
+      <h3 class="text-xl font-bold mb-2">Apostle Paul English Medium School</h3>
+      <p class="text-sm">Elimu na Malezi Bora .</p>
     </div>
-    <p class="mt-4">&copy; 2025 Ibrahim Garden Tours. All rights reserved.</p>
+    <div>
+      <h4 class="font-semibold mb-2">Mawasiliano</h4>
+      <p class="text-sm">Simu: +255673769392</p>
+      <p class="text-sm">Barua Pepe: info@apostlepaulschool.ac.tz</p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Mahali</h4>
+      <p class="text-sm">Mpinga Bagamoyo</p>
+    </div>
   </div>
+  <div class="text-center text-xs text-gray-300 mt-8">© 2025 Apostle Paul English Medium School. Haki Zote Zimehifadhiwa.</div>
 </footer>
 
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/255655474440" target="_blank" class="fixed bottom-4 left-4 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg flex items-center space-x-2">
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M20.52 3.48A11.77 11.77 0 0012 0C5.37 0 .11 5.27.11 11.79c0 2.08.55 4.13 1.6 5.92L0 24l6.42-1.68a11.89 11.89 0 005.57 1.42h.01c6.63 0 11.99-5.27 11.99-11.79 0-3.15-1.25-6.12-3.47-8.45zm-8.52 19.09h-.01a10.14 10.14 0 01-5.15-1.42l-.37-.22-3.81 1 1-3.71-.24-.38a9.88 9.88 0 01-1.55-5.3C2.97 6.1 7.02 2.1 12 2.1c2.68 0 5.2 1.04 7.07 2.92a9.9 9.9 0 012.93 7c0 5.46-4.45 9.91-9.99 9.91zm5.51-7.44c-.3-.15-1.76-.86-2.03-.95-.27-.1-.47-.15-.66.15s-.76.95-.93 1.14c-.17.2-.34.22-.63.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.51-1.79-1.68-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.34.45-.5.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.61-.9-2.21-.24-.6-.48-.52-.66-.52h-.56c-.2 0-.52.07-.8.37s-1.05 1.03-1.05 2.5 1.08 2.89 1.23 3.09c.15.2 2.13 3.26 5.17 4.57.72.31 1.29.5 1.73.64.73.23 1.4.2 1.93.12.59-.09 1.76-.72 2.01-1.42.25-.69.25-1.28.17-1.42-.07-.15-.27-.22-.56-.37z"/></svg>
-  <span>Chat with us</span>
+<a href="https://wa.me/255673769392" target="_blank" class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg z-50">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+    <path d="M12.04 2.003a9.943 9.943 0 0 0-8.27 15.327l-1.2 4.392 4.496-1.18a9.94 9.94 0 0 0 4.97 1.276h.005c5.514 0 10-4.486 10-10s-4.486-10-10-10zm0 18.182a8.152 8.152 0 0 1-4.16-1.15l-.296-.18-2.667.7.712-2.6-.188-.27a8.15 8.15 0 1 1 6.6 3.5zm4.507-6.066c-.25-.125-1.48-.731-1.71-.813-.23-.082-.397-.125-.563.125s-.645.812-.79.98c-.146.167-.29.188-.54.063-.25-.125-1.055-.388-2.01-1.236-.743-.661-1.244-1.475-1.39-1.725-.145-.25-.015-.385.11-.51.114-.114.25-.292.376-.438.125-.146.167-.25.25-.418.083-.167.042-.313-.02-.438-.063-.125-.563-1.355-.77-1.854-.2-.48-.403-.417-.563-.425l-.48-.009a.925.925 0 0 0-.667.313c-.23.25-.875.855-.875 2.083 0 1.229.896 2.417 1.02 2.583.125.167 1.763 2.688 4.277 3.77.597.258 1.063.413 1.426.528.598.19 1.14.167 1.57.104.479-.072 1.48-.604 1.69-1.187.208-.583.208-1.083.146-1.188-.062-.104-.23-.167-.48-.292z"/>
+  </svg>
 </a>
 
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const shortSwiper = new Swiper('.shortSwiper', {
+    loop: true,
+    autoplay: { delay: 3000 },
+  });
+  const extraSwiper = new Swiper('.extraSwiper', {
+    loop: true,
+    autoplay: { delay: 2500 },
+  });
+</script>
+
 </body>
-  </html>
+</html>
