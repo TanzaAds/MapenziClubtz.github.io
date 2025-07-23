@@ -154,6 +154,80 @@
 
 
 
+<!-- Fomu ya Maombi ya Kusajili Mwanafunzi -->
+<section id="application" class="bg-gray-50 py-20">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-blue-900 mb-10">Fomu ya Maombi ya Kusajili Mwanafunzi</h2>
+    <form class="bg-white p-8 rounded-lg shadow-lg space-y-6">
+      
+      <!-- Jina la Mwanafunzi -->
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Jina Kamili la Mwanafunzi</label>
+        <input type="text" required placeholder="Mfano: Amina Joseph" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      
+      <!-- Umri wa Mwanafunzi -->
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Umri wa Mwanafunzi (Miaka)</label>
+        <input type="number" id="studentAge" min="2" max="14" required placeholder="Mfano: 5" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" oninput="updateLevel()">
+      </div>
+
+      <!-- Aina ya Elimu -->
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Chagua Level ya Masomo</label>
+        <select id="educationLevel" class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white text-gray-700" readonly>
+          <option value="">Tafadhali weka Umri kwanza</option>
+        </select>
+      </div>
+
+      <!-- Namba ya Mzazi -->
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Namba ya Simu ya Mzazi/Mlezi</label>
+        <input type="tel" required placeholder="Mfano: 0673 769 392" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <!-- Sehemu anapopatikana -->
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Sehemu Anayopatikana</label>
+        <input type="text" required placeholder="Mfano: Mpinga, Bagamoyo" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <!-- Maelezo ya Ada -->
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+        <p class="text-sm text-gray-700">
+          <strong>Ada:</strong> Nursery - TSh 860,000 / Mwaka | Primary - TSh 1,200,000 / Mwaka
+        </p>
+      </div>
+
+      <!-- Kitufe cha Submit -->
+      <div class="text-center">
+        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full shadow-lg transition">Tuma Maombi</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<!-- Script ya kubadili Level kulingana na Umri -->
+<script>
+  function updateLevel() {
+    const age = parseInt(document.getElementById("studentAge").value);
+    const level = document.getElementById("educationLevel");
+
+    if (!isNaN(age)) {
+      if (age >= 2.5 && age <= 5) {
+        level.innerHTML = '<option value="Nursery">Nursery</option>';
+      } else if (age >= 6 && age <= 14) {
+        level.innerHTML = '<option value="Primary">Primary</option>';
+      } else {
+        level.innerHTML = '<option value="">Umri haukubaliki (Miaka 2.5 - 14)</option>';
+      }
+    }
+  }
+</script>
+
+
+
 
 <!-- Footer -->
 <footer class="bg-blue-900 text-white py-10 mt-10">
