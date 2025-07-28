@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <!-- Language Switcher -->
+<div class="flex justify-end px-6 py-4">
+  <select id="languageSelector" class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+    <option value="en">English</option>
+    <option value="sw">Swahili</option>
+  </select>
+</div>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="TanzaAds - Tanzania's Leading Digital Marketing Agency for Web Design, SEO, Social Media & Branding." />
@@ -8,6 +15,55 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    
+    <script>
+  const translations = {
+    sw: {
+      "We Build Brands That Convert": "Tunajenga Chapa Zinazobadilisha",
+      "From Social Media to Web & SEO — TanzaAds Helps You Grow Online!": "Kutoka Mitandao ya Kijamii hadi Web & SEO — TanzaAds Hukusaidia Kukua Mtandaoni!",
+      "Get a Free Quote": "Pata Nukuu Bila Malipo",
+      "Our Services": "Huduma Zetu",
+      "Website Design": "Ubunifu wa Tovuti",
+      "We build mobile-optimized, secure, and fast-loading websites designed to capture leads and elevate your brand image. Ideal for schools, Tourism, hotels, shops, and organizations.":
+        "Tunatengeneza tovuti zenye kasi, salama na zinazopatikana kirahisi kwenye simu. Inafaa kwa shule, utalii, hoteli, maduka na taasisi.",
+      "Digital Marketing": "Masoko ya Kidijitali",
+      "Boost your sales with targeted Facebook Ads, Instagram campaigns, and Google Ads. We help businesses grow faster with strategic marketing solutions.":
+        "Ongeza mauzo kupitia Matangazo ya Facebook, kampeni za Instagram na Google Ads. Tunasaidia biashara kukua haraka.",
+      "Branding & Graphics": "Ubunifu na Chapisho la Chapa",
+      "From logos to business profiles and event posters — we design visuals that tell your story and grab attention. Perfect for startups, churches, events, and more.":
+        "Kutoka kwa nembo hadi profaili za biashara na mabango — tunabuni picha zinazovutia. Inafaa kwa makampuni mapya, makanisa na matukio.",
+      "Affordable Pricing for Every Stage": "Bei Nafuu kwa Kila Hatua",
+      "Choose a plan that fits your business or organization.": "Chagua mpango unaofaa biashara au taasisi yako.",
+      "Startup Plan": "Mpango wa Mwanzo",
+      "For small businesses ready to grow online.": "Kwa biashara ndogo zinazotaka kukua mtandaoni.",
+      "Premium Plan": "Mpango wa Kipekee",
+      "Perfect for companies & organizations needing full growth support.": "Unawafaa makampuni na taasisi zinazohitaji msaada wa ukuaji kamili.",
+      "What Our Clients Say": "Wateja Wanasema Nini",
+      "Let’s Start Your Project": "Tuanze Mradi Wako",
+      "We’re available 24/7 via WhatsApp & Phone": "Tupo hewani masaa 24 kwa WhatsApp na Simu",
+      "Chat on WhatsApp": "Wasiliana WhatsApp",
+      "Select Plan": "Chagua Mpango"
+    }
+  };
+
+  document.getElementById('languageSelector').addEventListener('change', function () {
+    const selectedLang = this.value;
+    const allTextNodes = document.querySelectorAll("body *");
+
+    allTextNodes.forEach(node => {
+      if (node.children.length === 0 && node.innerText.trim() !== "") {
+        const original = node.innerText.trim();
+        if (translations[selectedLang] && translations[selectedLang][original]) {
+          node.innerText = translations[selectedLang][original];
+        } else if (selectedLang === 'en') {
+          // Optionally add reverse translation or reload page
+          location.reload(); // fallback to original English
+        }
+      }
+    });
+  });
+</script>
 
     <!-- Google Fonts: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
